@@ -1,0 +1,11 @@
+Instance 1:
+docker run -it ubuntu sh -c "while true; do echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website; done"
+
+Instance 2:
+docker ps -a
+docker exec -it sad_noether bash
+apt-get update
+apt-get -y install curl
+
+Instance 1:
+helsinki.fi
